@@ -4,16 +4,20 @@ A pure go based javascript minify tool.
 # Motivation
 I needed a simple tool that can do js-minify on a target folder.
 
+# Installation
+
+    go get github.com/ibrahimnoorz/go-jsminify
+  
 # Usage
   **\*Note: Running this tool will overwrite existing files with minified version. Make a backup first.**
   
-  _*go build go-jsminify.go*_
-  
-  _*go-jsminify \<sourcecodefolder\> \<workercount\> -v*_
-  
-  _*go-jsminify c:\myproject\jsfiles 3 -v*_
-  
-  _*-v = verbose mode*_
+      go build go-jsminify.go
+
+      go-jsminify \<sourcecodefolder\> \<workercount\> -v
+
+      go-jsminify c:\myproject\jsfiles 3 -v
+
+      -v = verbose mode
 
 # TODO
   - Add support for writting the affected files to new location and renaming
